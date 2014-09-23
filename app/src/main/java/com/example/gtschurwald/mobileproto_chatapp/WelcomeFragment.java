@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 /**
  * Created by gtschurwald on 9/22/2014.
@@ -25,6 +26,19 @@ public class WelcomeFragment extends Fragment {
                              Bundle savedInstanceState) {
         //Inflate the fragment view so it fills screen
         View rootView = inflater.inflate(R.layout.fragment_home_screen, container, false);
+
+
+        Button button = (Button) rootView.findViewById(R.id.chatButton);
+        button.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+        
+            }
+        });
+
         return rootView;
     }
+
 }
