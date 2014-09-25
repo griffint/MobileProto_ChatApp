@@ -34,7 +34,8 @@ public class WelcomeFragment extends Fragment {
             @Override
             public void onClick(View v)
             {
-
+                //do stuffs
+               // buttonClicked(v);
             }
         });
 

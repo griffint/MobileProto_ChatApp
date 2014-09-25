@@ -21,7 +21,7 @@ public class HomeScreen extends Activity {
         setContentView(R.layout.activity_home_screen);
         if (savedInstanceState == null) {
             getFragmentManager().beginTransaction()
-                    .add(R.id.container, new WelcomeFragment())
+                    .add(R.id.container, new WelcomeFragment())   //I want to replace with welcome
                     .commit();
         }
     }
