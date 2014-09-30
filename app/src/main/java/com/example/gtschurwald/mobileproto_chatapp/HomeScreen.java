@@ -23,10 +23,18 @@ public class HomeScreen extends Activity {
 
         //this is the start chat button on the home activity
         Button chatStartButton = (Button) findViewById(R.id.chatStartButton);
+        chatStartButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+        public void onClick(View view)
+            {
+                //start new activity
+                //this is code to start new activities
+                Intent intent = new Intent(getApplicationContext(), ListUsersActivity.class);
+                startActivity(intent);      //this intent starts the list activity when the button is pressed
+            }
+        });
 
-        //this is code to start new activities
-        Intent intent = new Intent(getApplicationContext(), ListUsersActivity.class);
-        startActivity(intent);
+
     }
 
 
