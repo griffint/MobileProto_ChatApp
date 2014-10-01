@@ -24,10 +24,6 @@
             android:name=".ListUsersActivity"
          >
         </activity>
-        <activity
-            android:name=".MessagingActivity"
-            >
-        </activity>
         android:name=".ListUsersActivity"
     </application>
 

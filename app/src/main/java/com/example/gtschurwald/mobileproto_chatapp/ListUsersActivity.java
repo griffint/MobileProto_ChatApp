@@ -29,7 +29,7 @@ public class ListUsersActivity extends Activity {
                         "You clicked on user: " + i,
                         Toast.LENGTH_SHORT).show();
                 //Look up user id and open conversation
-                openConversation(names, i)      //function to activate MessagingActivity
+                openConversation(names, i)
             }
         });
     }
