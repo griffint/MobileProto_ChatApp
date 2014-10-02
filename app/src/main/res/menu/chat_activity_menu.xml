@@ -8,6 +8,6 @@
         android:title="Add User"/>
     <item
         android:id="@+id/action_settings"
-        android:title="U mad bro?">
+        android:title="Settings">
     </item>
 </menu>
