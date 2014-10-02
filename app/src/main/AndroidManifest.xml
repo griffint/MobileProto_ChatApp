@@ -3,6 +3,7 @@
     package="com.example.gtschurwald.mobileproto_chatapp" >
     <uses-feature android:name="android.hardware.camera"
                   android:required="false" />
+    <uses-permission android:name="android.permission.INTERNET" />
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
@@ -21,7 +22,7 @@
 
         </activity>
         <activity
-            android:name=".ListUsersActivity"
+            android:name=".chatActivity"
          >
         </activity>
         android:name=".ListUsersActivity"

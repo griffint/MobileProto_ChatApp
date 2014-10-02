@@ -4,12 +4,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".HomeScreen"
-    tools:ignore="MergeRootFrame" >
+    tools:ignore="MergeRootFrame"
+    android:background="#ff6aff4b">
 
     <Button
         android:layout_width="169dp"
         android:layout_height="91dp"
         android:text="@string/begin_chat"
         android:id="@+id/chatStartButton"
-        android:layout_gravity="center_horizontal|top" />
+        android:layout_gravity="center_horizontal|top"
+        android:background="#ffff262b" />
 </FrameLayout>
