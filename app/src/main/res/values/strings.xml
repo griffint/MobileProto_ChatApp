@@ -7,5 +7,6 @@
     <string name="begin_chat">Click to begin chatting!</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="chat_room">Firebase enabled chat room</string>
+    <string name="title_activity_chatting">ChattingActivity</string>
 
 </resources>

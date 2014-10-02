@@ -9,7 +9,7 @@ import android.view.View;
 import android.widget.Button;
 
 
-public class HomeScreen extends Activity {
+public class loginActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,7 +24,7 @@ public class HomeScreen extends Activity {
             {
                 //start new activity
                 //this is code to start new activities
-                Intent intent = new Intent(getApplicationContext(), chatActivity.class);
+                Intent intent = new Intent(getApplicationContext(), chatRoomsActivity.class);
                 startActivity(intent);      //this intent starts the list activity when the button is pressed
             }
         });

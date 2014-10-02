@@ -5,55 +5,24 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.Menu;
-import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.widget.ArrayAdapter;
 import android.widget.EditText;
-import android.widget.ListAdapter;
-import android.widget.ListView;
 import android.widget.Toast;
 
-import com.firebase.client.Firebase;
 
-import java.util.ArrayList;
-
-
-/**
- * Created by gtschurwald on 9/25/2014.
- */
-public class chatActivity extends Activity {
-
-    //Setting up the Firebase here
-    Firebase myFirebaseRef = new Firebase("https://mobileproto2014.firebaseio.com/chatroom/%5b%5bCHATROOM_ID");
-
-    ListView mainListView;
-    ArrayAdapter mArrayAdapter;
-    ArrayList mNameList = new ArrayList();
+public class chattingActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_list_users);
-
-        // Access the ListView
-        mainListView = (ListView) findViewById(R.id.usersListView);
-
-        // Create an ArrayAdapter for the ListView
-        mArrayAdapter = new ArrayAdapter(this,
-                android.R.layout.simple_list_item_1,
-                mNameList);
-
-        // Set the ListView to use the ArrayAdapter
-        mainListView.setAdapter(mArrayAdapter);
+        setContentView(R.layout.activity_chatting);
     }
 
 
-
-    //This just makes the menu buttons appear
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.chat_activity_menu, menu);
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.chat_activity_menu, menu);
         return true;
     }
 
@@ -81,8 +50,8 @@ public class chatActivity extends Activity {
                     public void onClick(DialogInterface dialog, int whichButton) {
                         // This should create a new chat room
                         // Also add that value to the list shown in the ListView
-                        mArrayAdapter.add("shit");
-                        mArrayAdapter.notifyDataSetChanged();
+
+
                     }
                 });
 
@@ -108,4 +77,3 @@ public class chatActivity extends Activity {
         return true;
     }
 }
-
