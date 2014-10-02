@@ -57,10 +57,14 @@
       <file leaf-file-name="chatActivity.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/gtschurwald/mobileproto_chatapp/chatActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5019531" vertical-offset="882" max-vertical-offset="1462">
-              <caret line="67" column="55" selection-start-line="67" selection-start-column="55" selection-end-line="67" selection-end-column="55" />
+            <state vertical-scroll-proportion="-0.26171875" vertical-offset="1375" max-vertical-offset="1972">
+              <caret line="73" column="62" selection-start-line="73" selection-start-column="62" selection-end-line="73" selection-end-column="62" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#2667#2881#0" expanded="true" />
+                <element signature="e#2862#2863#0" expanded="true" />
+                <element signature="e#2935#3134#0" expanded="true" />
+                <element signature="e#3115#3116#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -1586,6 +1590,10 @@
           <caret line="18" column="43" selection-start-line="18" selection-start-column="43" selection-end-line="18" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2667#2881#0" expanded="true" />
+            <element signature="e#2862#2863#0" expanded="true" />
+            <element signature="e#2935#3134#0" expanded="true" />
+            <element signature="e#3115#3116#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1667,6 +1675,10 @@
           <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2667#2881#0" expanded="true" />
+            <element signature="e#2862#2863#0" expanded="true" />
+            <element signature="e#2935#3134#0" expanded="true" />
+            <element signature="e#3115#3116#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1960,10 +1972,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/gtschurwald/mobileproto_chatapp/chatActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5019531" vertical-offset="882" max-vertical-offset="1462">
-          <caret line="67" column="55" selection-start-line="67" selection-start-column="55" selection-end-line="67" selection-end-column="55" />
+        <state vertical-scroll-proportion="-0.26171875" vertical-offset="1375" max-vertical-offset="1972">
+          <caret line="73" column="62" selection-start-line="73" selection-start-column="62" selection-end-line="73" selection-end-column="62" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2667#2881#0" expanded="true" />
+            <element signature="e#2862#2863#0" expanded="true" />
+            <element signature="e#2935#3134#0" expanded="true" />
+            <element signature="e#3115#3116#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -1,11 +1,14 @@
 package com.example.gtschurwald.mobileproto_chatapp;
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.widget.ArrayAdapter;
+import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -62,6 +65,33 @@ public class chatActivity extends Activity {
             case R.id.add_user:
                 Toast.makeText(this, "Wanna add a user dawg?", Toast.LENGTH_SHORT)
                         .show();
+
+                //------------------------------------------------------------
+                //This stuff creates an AlertDialog to enter a username
+                AlertDialog.Builder alert = new AlertDialog.Builder(this);
+
+                alert.setTitle("Add a new user");
+                alert.setMessage("Type in your name here homie");
+
+                // Set an EditText view to get user input
+                final EditText input = new EditText(this);
+                alert.setView(input);
+
+                alert.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int whichButton) {
+                        // Do something with value!
+                    }
+                });
+
+                alert.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int whichButton) {
+                        // Canceled.
+                    }
+                });
+
+                alert.show();
+
+                //------------------------------------------------------------------
                 break;
             // action with ID action_settings was selected
             case R.id.action_settings:
