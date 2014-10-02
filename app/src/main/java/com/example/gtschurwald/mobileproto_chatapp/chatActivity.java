@@ -9,32 +9,56 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
-import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
-
+import android.app.FragmentManager;
+import android.app.FragmentTransaction;
 import com.firebase.client.Firebase;
-
 import java.util.ArrayList;
+import android:s
 
 
 /**
  * Created by gtschurwald on 9/25/2014.
  */
-public class chatActivity extends Activity {
+public class chatActivity extends FragmentActivity {
 
     //Setting up the Firebase here
     Firebase myFirebaseRef = new Firebase("https://mobileproto2014.firebaseio.com/chatroom/%5b%5bCHATROOM_ID");
 
-    ListView mainListView;
-    ArrayAdapter mArrayAdapter;
-    ArrayList mNameList = new ArrayList();
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_list_users);
+        setContentView(R.layout.chat_activity);
 
+        // Check that the activity is using the layout version with
+        // the fragment_container FrameLayout
+        if (findViewById(R.id.fragment_container) != null) {
+
+            // However, if we're being restored from a previous state,
+            // then we don't need to do anything and should return or else
+            // we could end up with overlapping fragments.
+            if (savedInstanceState != null) {
+                return;
+            }
+
+            // Create a new Fragment to be placed in the activity layout
+            chatRoomList firstFragment = new chatRoomList();
+
+            // In case this activity was started with special instructions from an
+            // Intent, pass the Intent's extras to the fragment as arguments
+            firstFragment.setArguments(getIntent().getExtras());
+
+            // Add the fragment to the 'fragment_container' FrameLayout
+
+            getSupportFragmentManager().beginTransaction()
+                    .add(R.id.fragment_container, firstFragment).commit();
+        }
+    }
+
+        /* This stuff should be in the chatRoomList fragment, not here
         // Access the ListView
         mainListView = (ListView) findViewById(R.id.usersListView);
 
@@ -43,8 +67,12 @@ public class chatActivity extends Activity {
                 android.R.layout.simple_list_item_1,
                 mNameList);
 
+        mArrayAdapter.add("Chatroom 1");
+        mArrayAdapter.notifyDataSetChanged();
+
         // Set the ListView to use the ArrayAdapter
         mainListView.setAdapter(mArrayAdapter);
+        */
     }
 
 
@@ -79,16 +107,16 @@ public class chatActivity extends Activity {
 
                 alert.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int whichButton) {
-                        // This should create a new chat room
-                        // Also add that value to the list shown in the ListView
-                        mArrayAdapter.add("shit");
-                        mArrayAdapter.notifyDataSetChanged();
+                        // This creates a new user to add to firebase
+                        String value = input.getText().toString();
+
                     }
                 });
 
                 alert.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int whichButton) {
                         // Canceled.
+                        return;
                     }
                 });
 
