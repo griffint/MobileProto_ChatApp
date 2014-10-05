@@ -57,7 +57,7 @@
       <file leaf-file-name="chatRoomsActivity.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/gtschurwald/mobileproto_chatapp/chatRoomsActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.73046875" vertical-offset="765" max-vertical-offset="1411">
+            <state vertical-scroll-proportion="-0.5625" vertical-offset="679" max-vertical-offset="1411">
               <caret line="23" column="3" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="3" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -1994,7 +1994,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/gtschurwald/mobileproto_chatapp/chatRoomsActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.73046875" vertical-offset="765" max-vertical-offset="1411">
+        <state vertical-scroll-proportion="-0.5625" vertical-offset="679" max-vertical-offset="1411">
           <caret line="23" column="3" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="3" />
           <folding>
             <element signature="imports" expanded="true" />
