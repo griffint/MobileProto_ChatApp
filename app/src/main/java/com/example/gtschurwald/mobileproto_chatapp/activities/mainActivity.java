@@ -15,15 +15,23 @@ import com.example.gtschurwald.mobileproto_chatapp.R;
 import com.example.gtschurwald.mobileproto_chatapp.content.contentManager;
 import com.example.gtschurwald.mobileproto_chatapp.fragments.chatFragment;
 import com.example.gtschurwald.mobileproto_chatapp.fragments.homePageFragment;
+import com.example.gtschurwald.mobileproto_chatapp.theListeners.onClickListeners;
+import com.firebase.client.Firebase;
 
 import java.util.HashMap;
 
 
 public class mainActivity extends Activity{
+
     //hashmap for saving the chatfragments in
     HashMap<String, chatFragment> channelFragments = new HashMap<String, chatFragment>();
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        //stuff to set up firebase
+        Firebase.setAndroidContext(this);
+        Firebase myFirebaseRef = new Firebase("https://<your-firebase>.firebaseio.com/");
+
         setContentView(R.layout.main_activity); //Set view to main_activity, which has a frame layout
         //Initialize content - channels/users/etc
         contentManager.init();
@@ -40,7 +48,7 @@ public class mainActivity extends Activity{
     }
 
     public void initialUISetup(){
-        //Load and show the HomeFragment
+        //Load and show the homepageFragment
         getFragmentManager().beginTransaction()
                 .add(R.id.fragment_container, new homePageFragment()).commit();
     }
@@ -60,7 +68,7 @@ public class mainActivity extends Activity{
         // as you specify a parent activity in AndroidManifest.xml.
         switch (item.getItemId()){
             case R.id.menu_change_username:
-                OnClickListeners.changeUsernameListener(this);
+                onClickListeners.changeUsernameListener(this);
             default:
                 return super.onOptionsItemSelected(item);
         }

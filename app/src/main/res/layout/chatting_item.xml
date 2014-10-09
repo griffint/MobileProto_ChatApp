@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/channel_profiles"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"/>
+    <TextView
+        android:id="@+id/channel_mostRecent"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below = "@id/channel_profiles"
+        android:textSize="14sp"
+        android:fontFamily="sans-serif-condensed"/>
+    <TextView
+        android:id="@+id/channel_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below ="@id/channel_mostRecent"
+        android:textSize="12sp"
+        android:fontFamily="sans-serif-light"/>
+    <TextView
+        android:id="@+id/channel_lastUpdated"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom= "@id/channel_title"
+        android:layout_alignParentRight="true"
+        android:textSize="@dimen/text_channel_title"
+        android:fontFamily="sans-serif-light"/>
+</RelativeLayout>

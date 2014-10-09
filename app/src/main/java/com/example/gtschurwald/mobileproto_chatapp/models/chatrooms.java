@@ -9,7 +9,7 @@ public class chatrooms implements Comparable, Serializable {
     private String sender, body, userId;
     private long time;
 
-    public Chat(String sender, String message, String userId){
+    public chatrooms(String sender, String message, String userId){
         this.sender = sender;
         this.body = message;
         this.userId = userId;

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/item_profile_background"
+        android:layout_weight=".20"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dp"
+        android:background="@android:color/holo_blue_dark">
+        <ImageView
+            android:id="@+id/item_profile_picture"
+            android:contentDescription="Profile Picture"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="1dp"
+            android:background="@drawable/item_default_profile"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_weight=".75"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/item_profile_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/item_name_top"
+            android:fontFamily="sans-serif-light"
+            android:text="Student"
+            android:textSize="@dimen/item_profile_name"/>
+        <TextView
+            android:id="@+id/item_chat_body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_profile_name"
+            android:textSize = "16sp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:text="Sample Text"
+            />
+        <TextView
+            android:id="@+id/item_chat_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/item_profile_name"
+            android:layout_marginRight="@dimen/item_time_right"
+            android:layout_alignParentRight="true"
+            android:textSize="13sp"
+            android:text="Sample Date"/>
+    </RelativeLayout>
+
+</LinearLayout>
+

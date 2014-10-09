@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.gtschurwald.mobileproto_chatapp.activities.mainActivity" >
+
+    <item android:id="@+id/menu_change_username"
+        android:title="Username"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        />
+</menu>

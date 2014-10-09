@@ -11,6 +11,7 @@ import android.widget.ListView;
 
 /**
  * Created by gtschurwald on 10/6/2014.
+ * this fragment controls the home page with the list of chat rooms
  */
 public class homePageFragment extends Fragment {
     private MainActivity activity;
