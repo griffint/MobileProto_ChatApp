@@ -5,11 +5,11 @@ import java.io.Serializable;
 /**
  * Created by gtschurwald on 10/8/2014.
  */
-public class chatrooms implements Comparable, Serializable {
-    private String sender, body, userId;
-    private long time;
+public class ChatMessage implements Comparable, Serializable {
+    public String sender, body, userId;
+    public long time;
 
-    public chatrooms(String sender, String message, String userId){
+    public ChatMessage(String sender, String message, String userId){
         this.sender = sender;
         this.body = message;
         this.userId = userId;
@@ -56,6 +56,6 @@ public class chatrooms implements Comparable, Serializable {
 
     @Override
     public int compareTo(Object object) {
-        return (time < ((Chat) object).time)?1:0;
+        return (time < ((ChatMessage) object).time)?1:0;
     }
 }

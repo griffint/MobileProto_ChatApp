@@ -8,4 +8,12 @@ import com.firebase.client.Firebase;
  * and will contain methods for pulling from and pushing to the firebase
  */
 public class firebaseManager {
+
+    public void retrieveChats{
+        //pull chats from firebase
+    }
+
+    public void pushChats{
+        //pushes chats to the firebase
+    }
 }

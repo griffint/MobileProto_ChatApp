@@ -12,8 +12,8 @@ import android.widget.Toast;
 
 
 import com.example.gtschurwald.mobileproto_chatapp.R;
-import com.example.gtschurwald.mobileproto_chatapp.content.contentManager;
-import com.example.gtschurwald.mobileproto_chatapp.fragments.chatFragment;
+import com.example.gtschurwald.mobileproto_chatapp.content.ContentManager;
+import com.example.gtschurwald.mobileproto_chatapp.fragments.chattingFragment;
 import com.example.gtschurwald.mobileproto_chatapp.fragments.homePageFragment;
 import com.example.gtschurwald.mobileproto_chatapp.theListeners.onClickListeners;
 import com.firebase.client.Firebase;
@@ -24,7 +24,7 @@ import java.util.HashMap;
 public class mainActivity extends Activity{
 
     //hashmap for saving the chatfragments in
-    HashMap<String, chatFragment> channelFragments = new HashMap<String, chatFragment>();
+    HashMap<String, chattingFragment> channelFragments = new HashMap<String, chattingFragment>();
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
@@ -34,12 +34,12 @@ public class mainActivity extends Activity{
 
         setContentView(R.layout.main_activity); //Set view to main_activity, which has a frame layout
         //Initialize content - channels/users/etc
-        contentManager.init();
+        ContentManager.init();
 
         if (savedInstanceState == null) {
             //Setup colors
-            contentManager.addNewUser(contentManager.username);
-            if (contentManager.username.equals("default")) {
+            ContentManager.addNewUser(ContentManager.username);
+            if (ContentManager.username.equals("default")) {
                 Toast.makeText(this, "You are signed in as default! Click the user icon to change your name!", Toast.LENGTH_SHORT).show();
             }
             //Setup Home Page

@@ -10,7 +10,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
 
-import com.example.gtschurwald.mobileproto_chatapp.adapters.chatroomsAdapter;
+import com.example.gtschurwald.mobileproto_chatapp.adapters.ChattingAdapter;
 import com.example.gtschurwald.mobileproto_chatapp.R;
 
 import java.util.ArrayList;
@@ -18,11 +18,11 @@ import java.util.List;
 
 /**
  * Created by gtschurwald on 10/6/2014.
- * this fragment controls the chatting in a chatroom
+ * this fragment controls the ChatRoom in a chatroom
  */
-public class chatFragment extends Fragment {
+public class chattingFragment extends Fragment {
     //List of chats
-    chatroomsAdapter chatAdapter;
+    ChattingAdapter chatAdapter;
 
     //Context from activity
     Context context;

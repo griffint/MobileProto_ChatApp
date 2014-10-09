@@ -1,7 +1,5 @@
 package com.example.gtschurwald.mobileproto_chatapp.content;
 
-import com.example.gtschurwald.mobileproto_chatapp.models.chatrooms;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -10,7 +8,7 @@ import java.util.List;
 /**
  * Created by gtschurwald on 10/8/2014.
  */
-public class contentManager {
+public class ContentManager {
     //User Logistics
     public static String username = "default";
     public static String userId = "0001";
